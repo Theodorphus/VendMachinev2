@@ -19,7 +19,7 @@ public interface Ivending
     void EndTransaction();
 
 }
-public class DrinkMachine : Ivending
+public class VendingMachine : Ivending
 {
 
 
@@ -27,7 +27,7 @@ public class DrinkMachine : Ivending
     public int minCost = 1;
     public int MoneyPool { get; set; }
 
-    public DrinkMachine()
+    public VendingMachine()
     {
         MoneyPool = 0;
     }

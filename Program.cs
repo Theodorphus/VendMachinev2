@@ -11,17 +11,17 @@ public class Program
     {
 
 
-        var drinkMachine = new DrinkMachine();
+        var vendingMachine = new VendingMachine();
 
 
 
         Console.WriteLine("Please insert one of the amounts: (1, 5, 10, 20, 50, 100, 500, 1000)");
-        drinkMachine.InsertMoney(Convert.ToInt32(Console.ReadLine()));
+        vendingMachine.InsertMoney(Convert.ToInt32(Console.ReadLine()));
 
-        while (drinkMachine.checkTotal() == true)
+        while (vendingMachine.checkTotal() == true)
         {
 
-            drinkMachine.ShowAll();
+            vendingMachine.ShowAll();
 
             Console.ReadLine();
 
